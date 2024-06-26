@@ -1,0 +1,35 @@
+National Bank of Rwanda wants to provide customized management of customer account by providing all in one operations that include saving, withdraw and money transfer to other accounts.
+The system should also provide interactive messaging to the customer on each transaction performed but also create records of each transaction.
+
+TASK
+As a Java developer, you have been hired to develop the backend of the banking system described with these minimun requirements:
+1. Manage clients by registering their details
+    - Customer(id, firstName, lastName, email, balance, mobile, account, dob, lastUpdateTime)
+
+2. Saving management
+    - Banking(id, customer, account, amount, type(saving), bankingDateTime)
+
+3. Withdraw management
+    - Banking(id, customer, account, amount, type(withdraw), bankingDateTime)
+
+4. Transfer management
+    - Banking(id, customer, account, amount, type(transfer), bankingDateTime)
+
+5. Update customer balance after each transaction
+    - saving(+), withdraw(-), transfer(-)
+
+6. On each saving and withdraw transaction, send an email to the customer
+    - "Dear <customer names>, your <saving/withdraw/transfer> of <amount> on your account <account> has been completed at <dateTime> has been completed successfully"
+
+7. Use a trigger to register the message sent to each customer based on the transaction performed in the message table
+    - Message(id, customer, message, messageDateTime)
+
+8. Create a report of all transactions performed by a customer
+
+INSTRUCTIONS
+
+- After proper configuration of backend, the records of customer respective transactions should be manually added using swagger, dbms, swagger, or application main class
+- All information should be stored in a relational database of your choice
+- Use spring boot to develop the backend
+- Add comments to explain your code
+- Indicated database tables are required to complete this task

@@ -1,0 +1,12 @@
+package com.nbr.bankingsystem.enums;
+
+public enum ResponseType {
+    SUCCESS,
+    RESOURCE_NOT_FOUND,
+    BAD_REQUEST,
+    INTERNAL_SERVER_ERROR,
+    DUPLICATE_EMAIL,
+    INSUFFICIENT_BALANCE,
+    INVALID_TRANSACTION_TYPE,
+    UNAUTHORIZED, FORBIDDEN
+}
